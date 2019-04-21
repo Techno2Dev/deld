@@ -1,0 +1,10 @@
+begin
+process(s,a,b,c,d)
+begin
+if s="00" then y<=a;
+elsif s="01" then y<=b;
+elsif s="10" then y<=c;
+else y<=d;
+end if;
+end process;
+end behaviour;

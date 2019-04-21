@@ -1,0 +1,14 @@
+begin
+process(a,b,c)
+begin
+if a='0' and b='0' and c='0' then sum<='0'; carry<='0';
+elsif a='0' and b='0' and c='1' then sum<='1'; carry<='0';
+elsif a='0' and b='1' and c='0' then sum<='1'; carry<='0';
+elsif a='0' and b='1' and c='1' then sum<='0'; carry<='1';
+elsif a='1' and b='0' and c='0' then sum<='1'; carry<='0';
+elsif a='1' and b='0' and c='1' then sum<='0'; carry<='1';
+elsif a='1' and b='1' and c='0' then sum<='0'; carry<='1';
+elsif a='1' and b='1' and c='1' then sum<='1'; carry<='1';
+end if;
+end process;
+end behaviour;
